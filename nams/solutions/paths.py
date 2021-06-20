@@ -105,7 +105,8 @@ def path_exists_deque(node1, node2, G):
 
 
 import nxviz as nv
-from nxviz import annotate, highlights
+# from nxviz import annotate, highlights
+from nxviz import highlights
 
 
 def plot_path_with_neighbors(G, n1, n2):

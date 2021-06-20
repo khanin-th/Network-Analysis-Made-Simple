@@ -3,7 +3,8 @@
 from itertools import combinations
 
 import networkx as nx
-from nxviz import circos
+import nxviz as nv
+# from nxviz import circos
 from nams.functions import render_html
 
 
@@ -153,4 +154,5 @@ def label_connected_component_subgraphs(G):
 
 def plot_cc_subgraph(G):
     """Plot all connected component subgraphs."""
-    c = circos(G, node_color_by="subgraph", group_by="subgraph")
+#     c = circos(G, node_color_by="subgraph", group_by="subgraph")
+    c = nv.CircosPlot(G, node_color='subgraph', node_grouping='subgraph')
